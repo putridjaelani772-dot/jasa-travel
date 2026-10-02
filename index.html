@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Togean Paradise - Paket Wisata Kepulauan Togean Terbaik</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        togean: {
+                            50: '#e6fffa',
+                            100: '#b2f5ea',
+                            500: '#319795',
+                            600: '#2c7a7b',
+                            700: '#234e52',
+                            800: '#1d4044',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1a365d/ffffff?text=Keindahan+Kepulauan+Togean');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-xl bg-teal-600 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-xl text-slate-900 tracking-tight">TogeanParadise</span>
+                    <span class="text-xs text-teal-600 font-medium tracking-wider uppercase">Explore Central Sulawesi</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#beranda" class="hover:text-teal-600 transition-colors">Beranda</a>
+                <a href="#destinasi" class="hover:text-teal-600 transition-colors">Destinasi</a>
+                <a href="#paket" class="hover:text-teal-600 transition-colors">Paket Wisata</a>
+                <a href="#tentang" class="hover:text-teal-600 transition-colors">Tentang Kami</a>
+                <a href="#testimoni" class="hover:text-teal-600 transition-colors">Testimoni</a>
+                <a href="#kontak" class="hover:text-teal-600 transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://wa.me/6285189659384?text=Halo%20Togean%20Paradise,%20saya%20tertarik%20untuk%20berkonsultasi%20paket%20wisata." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition-all transform hover:-translate-y-0.5 flex items-center space-x-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#beranda" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Beranda</a>
+            <a href="#destinasi" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Destinasi</a>
+            <a href="#paket" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Paket Wisata</a>
+            <a href="#tentang" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Tentang Kami</a>
+            <a href="#testimoni" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Testimoni</a>
+            <a href="#kontak" class="block font-medium text-slate-700 hover:text-teal-600 py-1">Kontak</a>
+            <div class="pt-4 border-t border-slate-100">
+                <a href="https://wa.me/6285189659384?text=Halo%20Togean%20Paradise,%20saya%20tertarik%20untuk%20berkonsultasi%20paket%20wisata." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 rounded-xl shadow-md flex items-center justify-center space-x-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-[90vh] flex items-center justify-center hero-bg pt-20 px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div class="max-w-4xl mx-auto space-y-6 z-10 py-12">
+            <span class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-medium border border-white/20 text-teal-200">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Surga Tersembunyi di Teluk Tomini</span>
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                Jelajahi Keajaiban Eksotis <span class="text-teal-300">Kepulauan Togean</span>
+            </h1>
+            <p class="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                Nikmati keindahan bawah laut kelas dunia, danau ubur-ubur tanpa sengat, pantai pasir putih bersih, dan pengalaman liburan tak terlupakan bersama kami.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#paket" class="w-full sm:w-auto bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-teal-900/30 transition-all transform hover:-translate-y-1 flex items-center justify-center space-x-2">
+                    <span>Lihat Paket Wisata</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/6285189659384?text=Halo%20Togean%20Paradise,%20saya%20ingin%20tanya-tanya%20tentang%20trip%20ke%20Togean." target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold px-8 py-4 rounded-xl transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                    <span>Tanya via WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Quick Features Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-3xl mx-auto text-left">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                    <div class="text-teal-300 text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-sm">100% Terpercaya</h4>
+                        <p class="text-xs text-slate-300">Resmi & Berpengalaman</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                    <div class="text-teal-300 text-2xl"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-sm">Full Itinerary</h4>
+                        <p class="text-xs text-slate-300">Jalur & Spot Terbaik</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                    <div class="text-teal-300 text-2xl"><i class="fa-solid fa-utensils"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-sm">Konsumsi Lokal</h4>
+                        <p class="text-xs text-slate-300">Fresh Seafood Harian</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                    <div class="text-teal-300 text-2xl"><i class="fa-solid fa-headset"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-sm">Support 24/7</h4>
+                        <p class="text-xs text-slate-300">Pelayanan Ramah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinasi Unggulan -->
+    <section id="destinasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Destinasi Populer</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Spot Wisata Wajib di Kepulauan Togean</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Keindahan alam bawah laut dan gugusan pulau eksotis yang siap memukau perjalanan liburan Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Destinasi 1 -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://placehold.co/600x400/2b6cb0/ffffff?text=Jellyfish+Lake" alt="Jellyfish Lake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full text-teal-700">Danau Unik</div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif font-bold text-xl text-slate-900">Danau Ubur-Ubur (Katupat)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Berenang bersama ribuan ubur-ubur ramah yang tidak menyengat di danau air payau eksotis.</p>
+                        <div class="pt-2 flex items-center text-teal-600 text-sm font-semibold">
+                            <span>Spot Snorkeling Utama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 2 -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://placehold.co/600x400/319795/ffffff?text=Pulau+Kadidiri" alt="Pulau Kadidiri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full text-teal-700">Resort & Diving</div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif font-bold text-xl text-slate-900">Pulau Kadidiri</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Pusat resort dan surga bagi penyelam dengan terumbu karang karang murni serta biota laut beragam.</p>
+                        <div class="pt-2 flex items-center text-teal-600 text-sm font-semibold">
+                            <span>Spot Diving & Sunset</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destinasi 3 -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://placehold.co/600x400/2c7a7b/ffffff?text=Pulau+Malenge" alt="Pulau Malenge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full text-teal-700">Budaya & Alam</div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif font-bold text-xl text-slate-900">Pulau Malenge & Bajo</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Menjelajahi perkampungan Suku Bajo di atas air serta hutan bakau yang asri dan jernih.</p>
+                        <div class="pt-2 flex items-center text-teal-600 text-sm font-semibold">
+                            <span>Wisata Edukasi & Bahari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Paket Wisata -->
+    <section id="paket" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Pilihan Terbaik</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Paket Wisata Kepulauan Togean</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Pilih paket liburan yang sesuai dengan durasi dan kebutuhan Anda bersama keluarga atau rombongan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 flex flex-col justify-between transition-transform hover:-translate-y-1">
+                    <div>
+                        <div class="bg-teal-600 text-white p-6 relative">
+                            <span class="text-xs uppercase font-bold tracking-wider bg-teal-700/60 px-3 py-1 rounded-md">Populer</span>
+                            <h3 class="font-serif text-2xl font-bold mt-3">Paket 3 Hari 2 Malam</h3>
+                            <p class="text-teal-100 text-sm mt-1">Short Escape ke Spot Terbaik Togean</p>
+                            <div class="mt-4 pt-4 border-t border-teal-500/40 flex items-baseline">
+                                <span class="text-xs text-teal-100 mr-1">Mulai</span>
+                                <span class="text-3xl font-extrabold">Rp 1.850.000</span>
+                                <span class="text-xs text-teal-100 ml-1">/ pax</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h4 class="font-semibold text-slate-900 text-sm tracking-wide uppercase">Fasilitas Termasuk:</h4>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Penginapan/Resort (2 Malam)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Makan 3x Sehari + Kelapa Muda</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Sewa Kapal Wisata Selama Trip</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Alat Snorkeling (Masker & Fin)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Guide Lokal Berpengalaman</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Tiket Masuk Destinasi & Danau Ubur</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBookingModal('Paket 3 Hari 2 Malam', 'Rp 1.850.000')" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pesan Paket Ini</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border-2 border-teal-500 flex flex-col justify-between transition-transform hover:-translate-y-1 relative">
+                    <div class="absolute -top-3 right-6 bg-amber-500 text-white font-bold text-xs uppercase px-4 py-1 rounded-full shadow-md">
+                        Best Value
+                    </div>
+                    <div>
+                        <div class="bg-slate-900 text-white p-6 relative">
+                            <span class="text-xs uppercase font-bold tracking-wider bg-slate-800 px-3 py-1 rounded-md">Paling Diminati</span>
+                            <h3 class="font-serif text-2xl font-bold mt-3">Paket 4 Hari 3 Malam</h3>
+                            <p class="text-slate-300 text-sm mt-1">Eksplorasi Menyeluruh Kepulauan Togean</p>
+                            <div class="mt-4 pt-4 border-t border-slate-800 flex items-baseline">
+                                <span class="text-xs text-slate-300 mr-1">Mulai</span>
+                                <span class="text-3xl font-extrabold text-teal-400">Rp 2.650.000</span>
+                                <span class="text-xs text-slate-300 ml-1">/ pax</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h4 class="font-semibold text-slate-900 text-sm tracking-wide uppercase">Fasilitas Termasuk:</h4>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Penginapan/Resort (3 Malam)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Makan 3x Sehari (Menu Seafood Fresh)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Private Speedboat / Boat Wisata</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Full Set Alat Snorkeling & P3K</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Guide Lokal & Dokumentasi Underwater</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Kunjungan Pulau Malenge & Bajo</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBookingModal('Paket 4 Hari 3 Malam', 'Rp 2.650.000')" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pesan Paket Ini</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 flex flex-col justify-between transition-transform hover:-translate-y-1">
+                    <div>
+                        <div class="bg-teal-700 text-white p-6 relative">
+                            <span class="text-xs uppercase font-bold tracking-wider bg-teal-800 px-3 py-1 rounded-md">VIP Experience</span>
+                            <h3 class="font-serif text-2xl font-bold mt-3">Paket 5 Hari 4 Malam</h3>
+                            <p class="text-teal-100 text-sm mt-1">Petualangan Ultimate Togean & Diving</p>
+                            <div class="mt-4 pt-4 border-t border-teal-600 flex items-baseline">
+                                <span class="text-xs text-teal-100 mr-1">Mulai</span>
+                                <span class="text-3xl font-extrabold">Rp 3.450.000</span>
+                                <span class="text-xs text-teal-100 ml-1">/ pax</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h4 class="font-semibold text-slate-900 text-sm tracking-wide uppercase">Fasilitas Termasuk:</h4>
+                            <ul class="space-y-3 text-sm text-slate-600">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Resort Eksklusif (4 Malam)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Full Board Meals & Barbeque Ikan</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Boat Khusus Eksplorasi Terpadu</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Alat Snorkeling & Bonus Sesi Diving</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Expert Guide & Kamera Underwater (GoPro)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-teal-600"></i><span>Souvenir Eksklusif Togean Paradise</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="openBookingModal('Paket 5 Hari 4 Malam', 'Rp 3.450.000')" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Pesan Paket Ini</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Tentang Togean Paradise</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Partner Terpercaya Perjalanan Liburan Anda di Kepulauan Togean</h2>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Togean Paradise adalah agen tur lokal profesional yang berbasis di Sulawesi Tengah. Kami berdedikasi untuk memberikan pengalaman wisata yang aman, nyaman, dan berkesan langsung di jantung Taman Nasional Kepulauan Togean.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Dengan tim pemandu lokal yang sangat mengenal setiap sudut pulau, spot karang terbaik, dan kearifan lokal masyarakat sekitar, liburan Anda dijamin menjadi momen yang paling berkesan dalam hidup.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="border-l-4 border-teal-600 pl-4">
+                            <h3 class="font-bold text-2xl text-slate-900">500+</h3>
+                            <p class="text-xs text-slate-500 font-medium uppercase mt-1">Wisatawan Puas</p>
+                        </div>
+                        <div class="border-l-4 border-teal-600 pl-4">
+                            <h3 class="font-bold text-2xl text-slate-900">10+</h3>
+                            <p class="text-xs text-slate-500 font-medium uppercase mt-1">Tahun Pengalaman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://placehold.co/650x500/1d4044/ffffff?text=Keindahan+Togean" alt="Tentang Togean Paradise" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-teal-600 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs">
+                        <div class="flex items-center space-x-3">
+                            <div class="text-3xl text-amber-300"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <h4 class="font-bold text-sm">Official Local Operator</h4>
+                                <p class="text-xs text-teal-100 mt-0.5">Garansi pelayanan ramah & profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Pelanggan -->
+    <section id="testimoni" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Testimoni</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Kata Mereka yang Telah Berkunjung</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Pengalaman nyata dari para pelancong yang menjelajahi Togean bersama kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testi 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-amber-400 text-sm flex space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Trip 4H3M di Togean luar biasa banget! Pelayanan dari tim Togean Paradise sangat ramah, makanan lautnya segar setiap hari, dan spot snorkeling di Kadidiri juara!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-700 font-bold flex items-center justify-center">AR</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-slate-900">Andi Rahmat</h4>
+                            <p class="text-xs text-slate-500">Wisatawan dari Makassar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-amber-400 text-sm flex space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Danau ubur-uburnya keren sekali dan aman. Guide kami sangat sabar dan membantu mengabadikan momen underwater. Recommended banget agen ini!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-700 font-bold flex items-center justify-center">DS</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-slate-900">Dewi Sartika</h4>
+                            <p class="text-xs text-slate-500">Wisatawan dari Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-4">
+                    <div class="space-y-3">
+                        <div class="text-amber-400 text-sm flex space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Komunikasi via WhatsApp sangat cepat dan responsif. Semua fasilitas sesuai janji tanpa ada biaya tersembunyi. Pasti balik lagi ke Togean!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-700 font-bold flex items-center justify-center">RH</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-slate-900">Rian Hidayat</h4>
+                            <p class="text-xs text-slate-500">Wisatawan dari Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Informasi -->
+    <section id="kontak" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <span class="text-teal-400 font-semibold text-sm uppercase tracking-wider">Hubungi Kami</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">Siap Merencanakan Liburan Impian Anda?</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Jangan ragu untuk berkonsultasi mengenai jadwal, custom itinerary, atau penawaran khusus rombongan besar. Tim kami siap melayani Anda.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg mt-1"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-slate-200">WhatsApp / Telepon</h4>
+                                <a href="https://wa.me/6285189659384" target="_blank" class="text-teal-400 font-medium hover:underline text-base">0851-8965-9384</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg mt-1"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-slate-200">Basecamp Utama</h4>
+                                <p class="text-slate-300 text-sm">Ampana, Kabupaten Tojo Una-Una, Sulawesi Tengah</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg mt-1"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-slate-200">Email Resmi</h4>
+                                <p class="text-slate-300 text-sm">info@togeanparadise.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 space-y-6">
+                    <h3 class="font-serif font-bold text-xl">Kirim Pesan Cepat via WhatsApp</h3>
+                    <p class="text-slate-300 text-sm">Isi form di bawah ini dan Anda akan langsung terhubung ke WhatsApp kami dengan format pesan yang rapi.</p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Nama Lengkap</label>
+                            <input type="text" id="quick-name" placeholder="Masukkan nama Anda" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Pilihan Paket</label>
+                            <select id="quick-package" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-teal-500">
+                                <option value="Paket 3 Hari 2 Malam">Paket 3 Hari 2 Malam (Rp 1.850.000)</option>
+                                <option value="Paket 4 Hari 3 Malam">Paket 4 Hari 3 Malam (Rp 2.650.000)</option>
+                                <option value="Paket 5 Hari 4 Malam">Paket 5 Hari 4 Malam (Rp 3.450.000)</option>
+                                <option value="Custom Trip / Lainnya">Custom Trip / Diskusi Khusus</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Catatan Tambahan / Tanggal Rencana</label>
+                            <textarea id="quick-note" rows="3" placeholder="Contoh: Rencana berangkat bulan depan untuk 4 orang" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-teal-500"></textarea>
+                        </div>
+                        <button onclick="submitQuickContact()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center space-x-2 text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim ke WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-16 mt-16 border-t border-slate-800 text-center text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Togean Paradise. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-teal-400 transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-teal-400 transition-colors">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center px-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl relative transform transition-all animate-in fade-in zoom-in duration-200">
+            <button onclick="closeBookingModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700 text-xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="space-y-6">
+                <div>
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Form Pemesanan</span>
+                    <h3 class="font-serif font-bold text-2xl text-slate-900 mt-1">Konfirmasi Pesanan Paket</h3>
+                    <p class="text-xs text-slate-500 mt-1">Silakan lengkapi data singkat berikut sebelum terhubung dengan admin via WhatsApp.</p>
+                </div>
+
+                <div class="bg-teal-50 p-4 rounded-2xl border border-teal-100 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-teal-800 font-medium">Paket Dipilih:</span>
+                        <h4 id="modal-package-name" class="font-bold text-teal-900 text-base">Paket Wisata</h4>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs text-teal-800 font-medium">Estimasi:</span>
+                        <div id="modal-package-price" class="font-bold text-teal-700 text-base">Rp 0</div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">Nama Lengkap</label>
+                        <input type="text" id="modal-name" placeholder="Nama Anda" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-teal-500">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">Jumlah Peserta</label>
+                            <input type="number" id="modal-pax" min="1" value="2" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">Rencana Tanggal</label>
+                            <input type="date" id="modal-date" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-teal-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">Catatan Khusus (Opsional)</label>
+                        <textarea id="modal-note" rows="2" placeholder="Contoh: Ada anak-anak atau permintaan menu khusus" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:border-teal-500"></textarea>
+                    </div>
+
+                    <button onclick="sendWhatsAppBooking()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Lanjutkan ke WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Modal Logic
+        let selectedPackage = '';
+        let selectedPrice = '';
+
+        function openBookingModal(packageName, packagePrice) {
+            selectedPackage = packageName;
+            selectedPrice = packagePrice;
+            document.getElementById('modal-package-name').innerText = packageName;
+            document.getElementById('modal-package-price').innerText = packagePrice;
+            
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function sendWhatsAppBooking() {
+            const name = document.getElementById('modal-name').value.trim();
+            const pax = document.getElementById('modal-pax').value;
+            const date = document.getElementById('modal-date').value;
+            const note = document.getElementById('modal-note').value.trim();
+
+            if (!name) {
+                alert('Mohon masukkan nama lengkap Anda terlebih dahulu.');
+                return;
+            }
+
+            const message = `Halo Togean Paradise, saya ingin memesan paket wisata:%0A%0A*Paket:* ${selectedPackage} (${selectedPrice})%0A*Nama:* ${name}%0A*Jumlah Peserta:* ${pax} Orang%0A*Rencana Tanggal:* ${date || 'Menyesuaikan'}%0A*Catatan:* ${note || '-'}`;
+            
+            const url = `https://wa.me/6285189659384?text=${message}`;
+            window.open(url, '_blank');
+            closeBookingModal();
+        }
+
+        function submitQuickContact() {
+            const name = document.getElementById('quick-name').value.trim();
+            const pkg = document.getElementById('quick-package').value;
+            const note = document.getElementById('quick-note').value.trim();
+
+            if (!name) {
+                alert('Mohon masukkan nama Anda terlebih dahulu.');
+                return;
+            }
+
+            const message = `Halo Togean Paradise, saya ingin konsultasi paket wisata:%0A%0A*Nama:* ${name}%0A*Pilihan:* ${pkg}%0A*Catatan:* ${note || '-'}`;
+            
+            const url = `https://wa.me/6285189659384?text=${message}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
